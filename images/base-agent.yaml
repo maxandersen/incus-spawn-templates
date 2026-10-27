@@ -3,7 +3,8 @@ description: Define and configure the base agent
 parent: tpl-minimal
 tools:
   - mise
-  - pi
+  - pi:
+      provider: openai
 default-action: pi
 skills:
   repo: maxandersen/skills
