@@ -1,0 +1,12 @@
+name: isx-tamboui
+description: Setup tamboui
+parent: isx-base-agent
+tools:
+ - mise
+repos:
+  - url: https://github.com/tamboui/tamboui
+    path: ~/code/tamboui/tamboui
+    prime: mise x -c "isx-trust; ./gradlew dependencies"
+
+
+

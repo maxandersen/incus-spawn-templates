@@ -6,6 +6,6 @@ tools:
 repos:
   - url: https://github.com/jbangdev/jbang
     path: ~/code/jbangdev/jbang
-    prime: mise x -- ./gradlew dependencies
+    prime: mise x -c "isx-trust; ./gradlew dependencies"
 
 
