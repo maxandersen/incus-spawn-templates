@@ -1,0 +1,8 @@
+name: pi-ext
+description: wire pi upto claude.md
+
+run_as_user:
+  - mkdir -p ~/.pi/agent
+  - ln -s /etc/claude-code/CLAUDE.md ~/.pi/agent/AGENTS.md
+
+verify: head -n 3 ~/.pi/agent/AGENTS.md
