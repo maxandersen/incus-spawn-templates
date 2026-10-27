@@ -1,0 +1,11 @@
+name: isx-jbang
+description: Setup jbangdev/jbang
+parent: isx-base-agent
+tools:
+ - mise
+repos:
+  - url: https://github.com/jbangdev/jbang
+    path: ~/code/jbangdev/jbang
+    prime: mise x -- ./gradlew dependencies
+
+

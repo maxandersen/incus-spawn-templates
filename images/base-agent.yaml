@@ -1,0 +1,12 @@
+name: isx-base-agent
+description: Define and configure the base agent
+parent: tpl-minimal
+tools:
+  - mise
+  - pi
+default-action: pi
+skills:
+  repo: maxandersen/skills
+  list:
+    - jreleaser
+    - prefer-jbang-automation

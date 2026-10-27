@@ -1,0 +1,13 @@
+name: mise
+description: mise latest
+
+run:
+  - dnf5 -y install 'dnf5-command(copr)'
+  - dnf5 -y copr enable jdxcode/mise
+  - dnf5 -y install mise
+
+run_as_user:
+  - printf 'eval $(mise activate bash)\n' >> ~/.bashrc
+
+verify: mise --version
+
